@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #807ECE;
+    --calculator: #2D2A37;
+    --button-last-col: #462878;
+    --button-eq: #7F45E2;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    max-width: 356px;
+    height: 566px;
+    background: var(--calculator);
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+
+button {
+    display: block;
+    width: 64px;
+    height: 64px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    height: 40px;
+    text-align: end;
+    margin-bottom: 10px;
+    background-color: var(--calculator);
+    border-style: none;
+    color: #fff;
+    padding-right: 35px;
+}
+
+.btn {
+    background-color: var(--calculator);
+    color: #fff;
+    margin-top: 5px;
+    border: 1px solid #33303b;
+    background-image: linear-gradient(to bottom, var(--calculator), #4d4b53 );
+
+}
+
+.btn-clear {
+    color: #975DFA;
+}
+
+.btn-last {
+    background-color:var(--button-last-col);
+    color: #fff;
+    margin-top: 5px;
+    border: 1px solid #33303b;
+    background-image: linear-gradient(to bottom, var(--button-last-col), #6339a7);
+
+}
+
+.btn-equal {
+    background-color:var(--button-eq);
+    color: #fff;
+    margin-top: 5px;
+    border: 1px solid #33303b;
+    background-image: linear-gradient(to bottom, var(--button-eq), #9360eb);
+}
+
+
+.calculator {
+
+}
+
+
+.btn:hover {
+    background: #9e9e9e;
+}
